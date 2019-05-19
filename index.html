@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<!-- Meta tags
+	============================================= -->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Institute of Software Engineering" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#FF0000" />
+	<meta name="description" content="Institute of Software Engineering (IJSE) is the #1 Software Engineering Institute in Sri Lanka in the fields of Software Engineering, Information Technology and Computer Science. IJSE offers various Software Engineering related programs for Graduates, Undergraduates, After A/L Students and IT Professionals...">
+
+	<!-- Document Title
+	============================================= -->
+	<title>IJSE | Institute of Software Engineering | Sri Lanka's #1 Software Engineering Institute</title>
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Mukta+Vaani:300,400,500,600,700|Open+Sans:300,400,600,700,800,900" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/colors.css" type="text/css" />
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+	<!-- Bootstrap Select CSS -->
+	<!--<link rel="stylesheet" href="css/components/bs-select.css" type="text/css" />-->
+
+	<!-- Theme Specific Stylesheet -->
+	<link rel="stylesheet" href="themes/sura-red/car.css" type="text/css" />
+	<link rel="stylesheet" href="themes/sura-red/css/car-icons/style.css" type="text/css" />
+	<link rel="stylesheet" href="themes/sura-red/css/ijse-icons/style.css" type="text/css" />
+	<!-- / -->
+
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<!--<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />-->
+	<link rel="stylesheet" href="themes/sura-red/css/fonts.css" type="text/css" />
+
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+	<!--<link rel="stylesheet" href="css/colors.php?color=c85e51" type="text/css" />-->
+
+	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
+	<!--<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />-->
+	<!--<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">-->
+	<!--<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">-->
+
+	<style>
+
+		header.sticky-header #top-social{
+			display: none !important;
+		}
+
+		/* Revolution Slider */
+		.ares .tp-tab { border: 1px solid #eee; }
+		.ares .tp-tab-content { margin-top: -4px; }
+		.ares .tp-tab-content { padding: 15px 15px 15px 110px; }
+		.ares .tp-tab-image { width: 80px;height: 80px; }
+
+        @media (max-width: 1200px){
+            #top-social{
+                margin: auto;
+                display: block !important;
+                display: flex !important;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        @media all and (max-width: 575px) {
+
+            #sb-slide-2 .slider-caption{
+                transform: scale(0.75);
+            }
+
+            #sb-slide-2 .slider-caption{
+                margin-top: 25px;
+                position: initial;
+                text-align: center;
+            }
+
+            #sb-slide-2 .slider-caption h2 span{
+                color: inherit;
+                background-color: #ffffff5e;
+                border-radius: 10px;
+                padding: 0 10px 0;
+            }
+
+            #sb-slide-2 .slider-caption h2{
+                margin-bottom: 20px !important;
+            }
+
+            #sb-slide-2 .slider-caption img{
+                display: none;
+            }
+
+            #sb-slide-2 .slider-caption h3{
+                display: none;
+            }
+
+            .sb-slide-intake{
+                display: none;
+            }
+
+        }
+
+        @media all and (min-width: 576px) and (max-width: 767px){
+
+            .slider-caption{
+                top: 0 !important;
+            }
+
+            .slider-caption h2{
+                font-size: 1.5em !important;
+            }
+
+            .slider-caption-bottom{
+                margin-top: 100px !important;
+            }
+
+            #sb-slide-2 .slider-caption{
+                margin-top: 80px;
+                text-align: center;
+            }
+
+
+            #sb-slide-2 .slider-caption h2{
+                color: white !important;
+            }
+
+
+            #sb-slide-2 .slider-caption h3 *{
+                background-color: transparent !important;
+                padding: 0 !important;
+            }
+
+            #sb-slide-2 .slider-caption img{
+                display: none !important;
+            }
+
+            #sb-slide-2 .sb-slide-intake{
+                margin-top: 0px !important;
+                position: absolute;
+                width: 190px;
+                bottom: -10px;
+                transform: scale(0.8);
+            }
+
+
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+
+            #sb-slide-2 .slider-caption{
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            #sb-slide-2 .slider-caption img{
+                display: none;
+            }
+
+            #sb-slide-2 .slider-caption h2 span{
+                color: inherit;
+                background-color: #ffffff5e;
+                border-radius: 10px;
+                padding: 0 10px 0;
+            }
+
+            #sb-slide-2 .slider-caption h3{
+                margin-top: 20px !important;
+            }
+
+            #sb-slide-2 .slider-caption h3 *{
+                background: transparent !important;
+                padding: 0;
+            }
+
+            #sb-slide-2 .sb-slide-intake{
+                margin-top: 0px !important;
+                /*position: absolute;*/
+                width: 190px;
+                margin: auto;
+                /*bottom: -10px;*/
+                transform: scale(0.8);
+            }
+
+        }
+
+        #sb-slide-2 .slider-caption h2 span{
+            color: inherit;
+        }
+
+        .slider-caption-bottom{
+            margin-top: 15px;
+        }
+
+        /*@media all and (min-width: 1024px)*/
+
+    </style>
+
+</head>
+
+<body class="stretched side-push-panel">
+	<div id="loader" data-loader-html="<div><img src='themes/sura-red/images/page-loader.gif' alt='Loader'></div>"></div>
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+        
+		<!-- Header
+		============================================= -->
+		<header id="header" class="static-sticky full-header clearfix">
+
+			<div id="header-wrap">
+
+				<div class="container-fluid clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+						============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo"><img src="themes/sura-red/images/logo.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo"><img src="themes/sura-red/images/logo@2x.png" alt="Canvas Logo"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="with-arrows clearfix">
+						<ul>
+							<li class="current"><a href="index.html"><div>Home</div></a></li>
+							<!-- Mega Menu -->
+							<li class="mega-menu">
+								<a href="#"><div>Programmes</div></a>
+								<div class="mega-menu-content style-2 clearfix">
+									<ul class="mega-menu-column col-lg-12">
+										<li>
+											<div class="widget center clearfix">
+
+												<!--<h3 class="nobottommargin">Course Catalog</h3>-->
+												<a href="#" class="sb-mega-menu-button sb-mega-menu-button-selected button button-small button-rounded button-border button-dark button-black font-primary" style="margin: 10px 0 40px">All</a>
+												<a href="#" class="sb-mega-menu-button button button-small button-rounded button-border button-dark button-black font-primary" style="margin: 10px 0 40px">Graduates</a>
+												<a href="#" class="sb-mega-menu-button button button-small button-rounded button-border button-dark button-black font-primary" style="margin: 10px 0 40px">Undergraduates</a>
+												<a href="#" class="sb-mega-menu-button button button-small button-rounded button-border button-dark button-black font-primary" style="margin: 10px 0 40px">After A/L</a>
+												<a href="#" class="sb-mega-menu-button button button-small button-rounded button-border button-dark button-black font-primary" style="margin: 10px 0 40px">IT Professionals</a>
+
+												<!-- Mega Menu Cars Carousel -->
+												<div class="owl-carousel customjs image-carousel carousel-widget" data-margin="20" data-nav="false" data-pagi="true" data-items-xs="1" data-items-sm="2" data-items-md="4" data-items-lg="6" data-items-xl="6">
+													<div class="oc-item center"><a href="http://ijse.lk/direct-entry-program.jsp"><img src="themes/sura-red/images/mega-menu/dep.png" alt="DEP">Direct Entry Program</a></div>
+													<div class="oc-item center"><a href="http://ijse.lk/cmjd-software-engineering.jsp"><img src="themes/sura-red/images/mega-menu/cmjd-professional.png" alt="CMJD Professional">CMJD <strong>Professional</strong></a></div>
+													<div class="oc-item center"><a href="http://ijse.lk/cmjd-certificate.jsp"><img src="themes/sura-red/images/mega-menu/cmjd-certificate.png" alt="CMJD Certificate">CMJD <strong>Certificate</strong></a></div>
+													<div class="oc-item center"><a href="http://ijse.lk/cmjd-diploma.jsp"><img src="themes/sura-red/images/mega-menu/cmjd-diploma.png" alt="CMJD Diploma">CMJD <strong>Diploma</strong></a></div>
+													<div class="oc-item center"><a href="http://ijse.lk/cmjd-graudate-diploma.jsp"><img src="themes/sura-red/images/mega-menu/cmjd-graduate-diploma.png" alt="CMJD Graduate Diploma">CMJD <strong>Graduate Diploma</strong></a></div>
+													<div class="oc-item center"><a href="http://ijse.lk/absd-software-engineering.jsp"><img src="themes/sura-red/images/mega-menu/absd.png" alt="ABSD">Advacned Businss Solution Developer</a></div>
+													<div class="oc-item center"><a href="http://ijse.lk/bcs-software-engineering.jsp"><img src="themes/sura-red/images/mega-menu/bcs.png" alt="BCS HEQ">BCS Higher Education Qualification</a></div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a href="http://ijse.lk/aboutus.jsp"><div>Discover IJSE</div></a></li>
+							<li><a href="http://ijse.lk/events.jsp"><div>Life @ IJSE</div></a></li>
+							<li><a href="#"><div>Career Guidance</div></a></li>
+							<li><a href="http://ijse.lk/contact.jsp"><div>Contact Us</div></a></li>
+						</ul>
+					</nav><!-- #primary-menu end -->
+
+                    <!-- Top Social
+                    ============================================= -->
+                    <div id="top-social">
+                        <ul>
+                            <li><a target="_blank" href="https://www.facebook.com/ijse.lk/" class="si-facebook"><span class="ts-icon"><i class="icon-facebook"></i></span><span class="ts-text">Facebook </span></a></li>
+							<li><a target="_blank"  href="https://www.linkedin.com/company/institute-of-java-&-software-engineering" class="si-linkedin"><span class="ts-icon"><i class="icon-linkedin"></i></span><span class="ts-text">LinkedIn </span></a></li>
+							<li><a target="_blank"  href="https://twitter.com/ijse_official" class="si-twitter"><span class="ts-icon"><i class="icon-twitter"></i></span><span class="ts-text">Twitter </span></a></li>
+							<li><a target="_blank"  href="https://www.youtube.com/channel/UCIUyGBwGEadUqBkKkinonGQ/" class="si-youtube"><span class="ts-icon"><i class="icon-youtube-play"></i></span><span class="ts-text">Youtube</span></a></li>
+							<li><a target="_blank"  href="tel:+94711202202" class="si-call"><span class="ts-icon"><i class="icon-call"></i></span><span class="ts-text">+94 711 202 202 </span></a></li>
+                            <li><a target="_blank"  href="mailto:info@ijse.lk" class="si-email3"><span class="ts-icon"><i class="icon-envelope-alt"></i></span><span class="ts-text">info@ijse.lk </span></a></li>
+                        </ul>
+                    </div><!-- #top-social end -->
+
+				</div>
+
+			</div>
+
+			<div id="header-trigger"><i class="icon-line-menu"></i><i class="icon-line-cross"></i></div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element swiper_wrapper full-screen clearfix" data-autoplay="5000" data-effect="fade"  data-speed="3500" data-dots="true" data-loop="true" data-grab="false">
+
+			<div class="swiper-container swiper-parent">
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide dark" style="background-image: url('themes/sura-red/images/hero-slider/no-1-software-engineering-institute.jpg'); background-size: cover;">
+						<div class="container clearfix">
+							<div class="slider-caption slider-caption-center slider-caption-bottom">
+								<span class="t300 font-primary d-none d-sm-block">Welcome to</span>
+								<h2 class="font-primary nott" style="background-color: #fd03031c; border-radius: 10px;">Institute of Software Engineering</h2>
+								<h3 class="t300 font-primary d-none d-sm-block" style="margin-top: -20px;">Sri Lanka's <span style="color: red; font-size: 2em; font-weight: bold;">#1</span> Software Engineering Institute</h3>
+								<!--<a href="#" class="button button-rounded button-border button-white button-light nott">More Details</a>-->
+							</div>
+						</div>
+					</div>
+
+					<div id="sb-slide-2" class="swiper-slide dark" style="background-image: url('themes/sura-red/images/hero-slider/direct-entry-program.jpg'); background-size: cover">
+						<div class="container clearfix">
+							<div class="slider-caption " style="max-width: none;">
+								<img src="themes/sura-red/images/logos/dep-logo.png" alt="DEP" style="width: 15%; background-color: rgba(255, 255, 255, 0.18); padding: 10px 5px 5px; border-radius: 10px;">
+								<h2 class="font-primary nott" style="color: #3e3d3d; margin-bottom: 0"><span>Direct Entry Program</span></h2>
+								<h3 class="font-primary d-none d-sm-block" style="color: white; margin-top: 0; margin-bottom: 15px">
+									The only program in Sri Lanka that <b style="background-color: #04080a4d; padding-left: 10px; padding-right: 10px; border-radius: 10px;">
+									guarantees your place in the IT industry</b>
+								</h3>
+								<a href="http://ijse.lk/direct-entry-program.jsp" class="button button-rounded button-border button-white button-light nott" style="color: white; border-color: white;">More Details</a>
+
+								<div class="sb-slide-intake" style="background-color: #f7c510;max-width: 190px; padding: 5px; margin-top: 120px;">
+									<div class="clearfix" style="margin: 1px;float: left;background-color: red;padding: 4px;text-align: center;/* font-weight: bold; */line-height: 1.2em;margin-right: 10px;">
+										<span style="font-weight: 400;">NOW</span><br>
+										<span style="font-size: 1.6em; font-weight: bold;">ON</span>
+									</div>
+									<div style="line-height: 1.5em; color: black; font-weight: 400;"><span>AUG 2019</span><br>
+										<span style=" font-size: 1.2em; font-weight: 600;">INTAKE</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="sb-slide-3" class="swiper-slide dark" style="background-image: url('themes/sura-red/images/hero-slider/cmjd-professional.jpg'); background-size: cover">
+						<div class="container clearfix">
+							<div class="slider-caption slider-caption-center">
+								<h2 class="font-primary nott"><img src="themes/sura-red/images/logos/cmjd-logo.png"> <span>Professional</span></h2>
+								<h3 class="t300 font-primary d-none d-sm-block"><span style="color: black; background-color: #f5efef78; padding: 0px 10px 0 10px; border-radius: 10px;">
+									To sharpen up <strong style="font-size: 1.2em;">Undergraduates</strong> development skills</span></h3>
+								<a href="http://ijse.lk/cmjd-software-engineering.jsp" class="button button-rounded button-border button-white button-light nott" style="border-color: #ff0000; color: #000000;">More Details</a>
+								<div class="sb-slide-intake" style="background-color: #f7c510;max-width: 190px; padding: 5px; margin: 80px auto">
+									<div class="clearfix" style="margin: 1px;float: left;background-color: red;padding: 4px;text-align: center;/* font-weight: bold; */line-height: 1.2em;margin-right: 10px;">
+										<span style="font-weight: 400;">NOW</span><br>
+										<span style="font-size: 1.6em; font-weight: bold;">ON</span>
+									</div>
+									<div style="line-height: 1.5em; color: black; font-weight: 400;"><span>MAR 2019</span><br>
+										<span style=" font-size: 1.2em; font-weight: 600;">INTAKE</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide dark" style="background-image: url('themes/sura-red/images/hero-slider/cmjd-certificate.jpeg'); background-size: cover; background-position-y: top;">
+						<div class="container clearfix">
+							<div class="slider-caption" style="max-width: none">
+								<h2 class="font-primary nott"><img src="themes/sura-red/images/logos/cmjd-logo.png"> <span style="color: black; padding: 0 10px 0 10px; background-color: #00000038; border-radius: 10px;">
+									Certificate</span>
+								</h2>
+								<h3 class="t300 font-primary d-none d-sm-block">
+									<span style="color: black; background-color: #f5efef78; padding: 0px 10px 0 10px; border-radius: 10px;">
+										To start Software Engineering from scratch <strong style="font-size: 1.2em; color: black;">After A/L </strong></span>
+								</h3>
+								<a href="http://ijse.lk/cmjd-certificate.jsp" class="button button-rounded button-border button-white button-light nott" style="border-color: #ff0000; color: #000000;">More Details</a>
+								<div class="sb-slide-intake" style="background-color: #f7c510;max-width: 190px; padding: 5px; margin: 80px 0">
+									<div class="clearfix" style="margin: 1px;float: left;background-color: red;padding: 4px;text-align: center;/* font-weight: bold; */line-height: 1.2em;margin-right: 10px;">
+										<span style="font-weight: 400;">NOW</span><br>
+										<span style="font-size: 1.6em; font-weight: bold;">ON</span>
+									</div>
+									<div style="line-height: 1.5em; color: black; font-weight: 400;"><span>JAN 2019</span><br>
+										<span style=" font-size: 1.2em; font-weight: 600;">INTAKE</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+		</section><!-- #Slider End -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content" class="clearfix">
+
+			<div class="content-wrap nobottompadding" style="padding-top: 1px">
+
+				<div class="section notopmargin nobottommargin clearfix" style="padding: 50px 0">
+					<div class="container clearfix">
+						<div class="row clearfix" style="position: relative;">
+							<div class="col-lg-12 center">
+								<div class="hlarge">
+									<h1>Welcome to IJSE</h1>
+								</div>
+								<p>
+									Our mission being <strong>“Contributing most capable and reliable software engineers with profound knowledge in most recent technologies who can match up to demands of ever evolving IT industry”</strong>, IJSE has contributed more than <strong>4300 skillful IT professionals</strong> occupying many eminent positions in numerous reputed companies in Sri Lanka. IJSE, being one of the leading IT education providers in Sri Lanka has been focusing on enhancing the skills and attitudes which are desperately sought by the IT industry ever since its inception in 2006 with our most exquisite Software Engineering courses in Sri Lanka.
+								</p>
+								<p class="text-justify">
+									Considering the rapidly evolving technology, advancing in IT industry and obtaining a degree in software engineering from IJSE will expose you to many possibilities which can lead you to a bright future. Distinguished as the <strong>only Oracle authorized training center in Sri Lanka</strong>, regardless whether you are an <strong>after A/L student, an Undergraduate, a Graduate or an IT Professional,</strong> due to its unique Software Engineering courses and Training programs,  IJSE is undoubtedly the best place to start your IT career in Software Industry. With our Software Engineering courses and degree programs, IJSE is guaranteed to provide you with a solid foundation for you to obtain a stable foothold for your future job.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section clearfix nomargin" style="background-color: white">
+					<div class="container clearfix">
+						<div class="row clearfix">
+							<div class="col-lg-12 center">
+								<h1 class="nomargin" style="font-family: 'Oswald', sans-serif;">
+									" The <span>F</span>astest and <span>E</span>asiest way to be a Graduate Software Engineer in Sri Lanka "
+								</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Counter Area
+				============================================= -->
+				<div class="section counter-section nomargin dark clearfix" style="padding: 40px 0">
+					<div class="container clearfix common-height">
+						<div class="row">
+							<div class="col-lg-4 col-md-6 center">
+								<div>
+									<i class="i-plain i-large divcenter color icon1-graduation-cap"></i>
+									<div class="counter"><span data-from="10" data-to="5000" data-refresh-interval="50" data-speed="1000"></span>+</div>
+									<h5>Software Engineers</h5>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 center">
+								<div>
+									<i class="i-plain i-large divcenter color icon1-history"></i>
+									<div class="counter"><span data-from="1" data-to="15" data-refresh-interval="50" data-speed="700"></span></div>
+									<h5>Years Experience</h5>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-md-6 center">
+								<div>
+									<i class="i-plain i-large divcenter color icon1-display"></i>
+									<div class="counter"><span data-from="10" data-to="30000" data-refresh-interval="85" data-speed="1200"></span>+</div>
+									<h5>Software Projects</h5>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div><!-- Counter Area end -->
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark noborder" style="background-color: #080808;">
+
+			<div class="container-fluid clearfix">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix" style="padding: 30px;">
+
+					<div class="row clearfix">
+						<div class="col-lg-8">
+
+							<div class="col_one_third col_on">
+								<div class="widget widget_links clearfix">
+									<h4 class="nomargin nopadding center"><i class="icon-call"></i> HOTLINE</h4>
+									<p class="center" style="font-size: 22px; font-weight: bold;">
+										+94 711 202 202
+									</p>
+									<h4 class="nomargin nopadding center">
+										<i class="icon-email"></i> EMAIL
+									</h4>
+									<p class="center" style="font-size: 22px; font-weight: bold">
+										info@ijse.lk
+									</p>
+									<div class="clearfix center">
+										<a  target="_blank" href="https://www.facebook.com/ijse.lk/" class="social-icon si-small si-rounded si-borderless inline-block si-facebook">
+											<i class="icon-facebook"></i>
+											<i class="icon-facebook"></i>
+										</a>
+
+										<a  target="_blank" href="https://twitter.com/ijse_official" class="social-icon si-small si-rounded si-borderless inline-block si-twitter">
+											<i class="icon-twitter"></i>
+											<i class="icon-twitter"></i>
+										</a>
+
+										<a  target="_blank"  href="https://www.youtube.com/channel/UCIUyGBwGEadUqBkKkinonGQ" class="social-icon si-small si-rounded si-borderless inline-block si-youtube">
+											<i class="icon-youtube-play"></i>
+											<i class="icon-youtube-play"></i>
+										</a>
+
+										<a  target="_blank"  href="https://www.linkedin.com/company/institute-of-java-&-software-engineering" class="social-icon si-small si-rounded si-borderless inline-block si-linkedin">
+											<i class="icon-linkedin"></i>
+											<i class="icon-linkedin"></i>
+										</a>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col_one_third">
+								<h4 class="center">Panadura Branch</h4>
+
+								<h5 class="center nomargin"><i class="icon-call"></i> PHONE</h5>
+								<p class="center" style="margin-top: 10px">
+									+94 38 2222 855 <br>
+									+94 38 2222 800 <br>
+									+94 38 2244 855 <br><br>
+									+94 711 101 101 <br>
+								</p>
+
+								<h5 class="center nomargin"><i class="icon-map-marker"></i> ADDRESS</h5>
+								<p class="center" style="margin-top: 10px">
+									#223A 1/2, Galle Road, Panadura.
+								</p>
+							</div>
+
+							<div class="col_one_third col_last">
+								<h4 class="center">Galle Branch</h4>
+								<h5 class="center nomargin"><i class="icon-call"></i> PHONE</h5>
+								<p class="center" style="margin-top: 10px">
+									+94 912 248 460 <br>
+									+94 711 303 303
+								</p>
+
+								<h5 class="center nomargin"><i class="icon-map-marker"></i> ADDRESS</h5>
+								<p class="center" style="margin-top: 10px">
+									#223A 1/2, Galle Road, Panadura.
+								</p>
+							</div>
+
+						</div>
+
+						<div class="col-lg-4 fright tright col_last">
+
+							<img src="themes/sura-red/images/logo-footer.png" alt="" height="50" >
+							<br>
+							<div style="color: #444">
+								<span>Copyright &copy; 2019 - <strong>Institute of Software Engineering</strong></span>
+								<p>All Rights Reserved</p>
+								<p style="margin-top: 10px;font-size: 12px; color: darkgrey">Developed by: IT Dept. of IJSE</p>
+							</div>
+
+							<div>
+								<a target="_blank"  href="https://www.oracle.com"><img height="50" src="images/partners/oracle-logo.png" alt="oracle"></a>
+								<a target="_blank"  href="https://www.bcs.org"><img height="50" src="images/partners/bcs-logo.png" alt="british computer socity"></a>
+							</div>
+
+							<p style="font-size: 10px; margin-top: 10px;">
+								All trademarks cited herein are the property of their respective owners.
+							</p>
+
+						</div>
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+	<!--<script src="themes/sura-red/js/360rotator.js"></script>-->
+
+	<!-- Bootstrap Select Plugin -->
+	<!--<script src="js/components/bs-select.js"></script>-->
+
+	<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
+	<!--<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>-->
+
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>-->
+	<!--<script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>-->
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+	<script src="themes/sura-red/js/sb-custom-script.js"></script>
+</body>
+</html>
